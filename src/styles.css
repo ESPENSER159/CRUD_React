@@ -1,0 +1,154 @@
+/* NavBar */
+.navbar {
+  width: 99%;
+  margin: auto;
+  padding: 10px 30px 0 30px;
+  background-color: #cfcfcf99;
+  border-radius: 0px 0px 20px 20px;
+}
+
+a:hover {
+  background-color: #0000000f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0000008c;
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 8px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.loginBox {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,.575)!important;
+}
+
+.logout {
+  justify-content: end;
+}
+.btn.logoutBtn {
+  border: none;
+  padding: 8px 15px;
+  font-weight: 500;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.5s;
+}
+
+.btn.logoutBtn:hover {
+  border-radius: 10px 10px 0px 0px;
+  background-color: #fff;
+}
+
+.btn.logoutBtn:hover:after {
+  content: ' 😢';
+}
+
+td.actions {
+  text-align: end;
+}
+
+.content {
+  height: 90vh;
+}
+
+.contentLogin {
+  margin: auto;
+  min-width: 370px;
+}
+
+
+/* Table Users */
+.colID {
+  width: 2%;
+}
+.colName {
+  width: 17%;
+}
+.colMail {
+  width: 17%;
+}
+.colAction {
+  width: 0%;
+}
+
+.emptyTable {
+  text-align: center;
+  font-weight: bold;
+}
+
+.containerTable {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+}
+
+
+/* Style React-Hook-Form */
+.notifiAlert {
+  color: #bf1616;
+  background-color: #ff00002b;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.notifiAlert::before {
+  display: inline;
+  content: "👆 ";
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #15814fcc;
+}
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(10px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
