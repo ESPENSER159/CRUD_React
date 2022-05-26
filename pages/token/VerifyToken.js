@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { useRouter } from 'next/router';
 
 export default function validateToken() {
 
     if(typeof window !== 'undefined') {
 
         const [validToken, setValidToken] = useState(false);
-        let router = useRouter();
 
         // Validar si existe un Token en sessionStorage
         if (sessionStorage.getItem('token') == null){
