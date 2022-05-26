@@ -20,9 +20,9 @@ export default function MyApp({ Component, pageProps }) {
 
   validateToken();
 
-  if(!token){
+  if (!token) {
     return (
-        <Login setToken={ setToken }/>
+      <Login setToken={setToken} />
     );
   }
 
