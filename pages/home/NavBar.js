@@ -20,6 +20,10 @@ export default function navBar() {
         <Link href="/home/Crear">
           <a className="nav-item nav-link">Crear Empleado</a>
         </Link>
+
+        <Link href="/home/Proto">
+          <a className="nav-item nav-link">Prototipo</a>
+        </Link>
       </div>
       <div className="col navbar-nav logout">
         <button className="btn logoutBtn" onClick={logout}>Cerrar Sesion</button>

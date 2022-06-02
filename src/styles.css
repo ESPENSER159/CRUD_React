@@ -1,3 +1,19 @@
+:root {
+  --text-p: #212121;
+  --primary: #f9a826;
+  --primary-p-light: #ffd95b;
+  --primary-p-dark: #c17900;
+  --secondary: #616161;
+  --secondary-s-light: #8e8e8e;
+  --secondary-s-dark: #373737;
+  --background-light: #fff;
+  --background-dark: #f2f2f2;
+}
+
+body {
+  background-color: var(--background-dark);
+}
+
 /* NavBar */
 .navbar {
   width: 99%;
@@ -19,7 +35,7 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  background-color: #fff;
+  background-color: #f2f2f2;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -43,7 +59,7 @@ a:hover {
 
 .btn.logoutBtn:hover {
   border-radius: 10px 10px 0px 0px;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 .btn.logoutBtn:hover:after {
@@ -68,6 +84,7 @@ td.actions {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -177,4 +194,143 @@ button[type="submit"],
 input[type="button"],
 input[type="submit"] {
   -webkit-appearance: none;
+}
+
+/* Prototipo */
+.proto {
+  margin: 0;
+  min-width: 800px;
+  min-height: 600px;
+}
+
+.protoMenu {
+  background-color: var(--background-light);
+  min-width: 240px;
+  height: 100vh;
+  min-height: 600px;
+  margin: 0;
+}
+
+.protoGestion {
+  min-height: 600px;
+  background-color: var(--background-dark);
+}
+
+.protoGestionTitle {
+  height: 20%;
+}
+
+.protoGestionTitle .icon {
+  min-width: 150px;
+  display: flex;
+  justify-content: end;
+}
+
+.protoGestionTitle .text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: var(--secondary-s-dark);
+}
+
+.protoGestionTipi {
+  height: 80%;
+  padding-top: 50px;
+}
+
+
+.menuTop {
+  height: 20%;
+  margin: 0 6%;
+}
+
+.menuTopIcon {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: auto 4px;
+  border-radius: 20px;
+  border: 2px solid var(--secondary-s-dark);
+  background-color: transparent;
+}
+
+.menuTopText {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.menuTopText .textName p {
+  font-size: 1.3rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--text-p);
+  margin: 0;
+}
+
+.menuTopText .textTipo p {
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--secondary-s-light);
+  margin: 0;
+}
+
+.menuCenter {
+  height: 55%;
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+.menuCenter::-webkit-scrollbar {
+  width: 5px;
+}
+
+.menuCenterContent {
+  align-items: center;
+  direction: ltr;
+  margin-bottom: 10px;
+}
+
+.menuCenterContent .item {
+  padding: 7px 0 7px 10px;
+  margin: 5px 0 5px 0;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.menuCenterContent .item:hover {
+  background-color: var(--primary-p-light);
+  cursor: pointer;
+}
+
+.menuCenterContent .icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  padding-top: 4px;
+}
+
+.menuCenterContent .text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
+}
+
+.menuEnd {
+  height: 25%;
+  justify-content: center;
+}
+
+.menuEnd span {
+  bottom: 30px;
 }
