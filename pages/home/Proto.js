@@ -10,13 +10,13 @@ export default function proto() {
 
       <div className="col col-2 protoMenu">
 
-        <div className="row row-cols-2 menuTop">
+        <div className="row menuTop">
           <div className="col-5 menuTopIcon">
             <div className="col">
               <Image src={iconAgent} alt="Logo Interactivo" width={50} height={50}></Image>
             </div>
           </div>
-          <div className="col-7 menuTopText">
+          <div className="col menuTopText">
             <div>
               <div className="col-12 textName">
                 <p>Edwin Caro</p>
@@ -120,7 +120,12 @@ export default function proto() {
           <div className="col-3 icon">
             <Image src={ilusResume} width={200} height={200} />
           </div>
-          <div className='col text'>Hola hablas con (xxxxx)</div>
+          <div className='col text'>
+            <div className='row row-cols-1'>
+              <div className='col hi'>Hola hablas con</div>
+              <div className='col name'>Edwin Caro</div>
+            </div>
+          </div>
         </div>
         <div className="row protoGestionTipi">
           <div className='col'>Tipificación</div>

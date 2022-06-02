@@ -1,5 +1,5 @@
 :root {
-  --text-p: #212121;
+  --text-p: #373737;
   --primary: #f9a826;
   --primary-p-light: #ffd95b;
   --primary-p-dark: #c17900;
@@ -13,6 +13,8 @@
 body {
   background-color: var(--background-dark);
 }
+
+
 
 /* NavBar */
 .navbar {
@@ -80,6 +82,7 @@ td.actions {
 }
 
 
+
 /* Custom ScrollBar */
 /* width */
 ::-webkit-scrollbar {
@@ -101,6 +104,7 @@ td.actions {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 
 
 /* Table Users */
@@ -130,6 +134,7 @@ td.actions {
   height: 70vh;
   overflow: auto;
 }
+
 
 
 /* Style React-Hook-Form */
@@ -196,6 +201,8 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
+
+
 /* Prototipo */
 .proto {
   margin: 0;
@@ -232,18 +239,31 @@ input[type="submit"] {
   align-items: center;
   font-weight: bold;
   font-size: xx-large;
-  color: var(--secondary-s-dark);
+  color: var(--text-p);
+}
+
+.protoGestionTitle .text .name {
+  text-align: center;
+  color: var(--primary);
 }
 
 .protoGestionTipi {
   height: 80%;
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  background-color: var(--secondary-s-light);
 }
+
 
 
 .menuTop {
   height: 20%;
-  margin: 0 6%;
+  margin: 0;
 }
 
 .menuTopIcon {
@@ -253,7 +273,7 @@ input[type="submit"] {
   text-align: center;
   width: auto;
   height: auto;
-  margin: auto 4px;
+  margin: auto 10px;
   border-radius: 20px;
   border: 2px solid var(--secondary-s-dark);
   background-color: transparent;
