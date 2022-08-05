@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_URL } from '../general.js'
 
 export default function validateToken() {
 
@@ -16,7 +17,7 @@ export default function validateToken() {
       // Validar si el token esta vigente
       async function validated(getUser, getToken) {
         // Consultar Token en DB
-        const resp = await fetch('http://api.artemisa.v2.com/users?linkTo=LOGIN&equalTo=' + getUser + '&token=' + getToken, {
+        const resp = await fetch(`${API_URL}/users?linkTo=LOGIN&equalTo=` + getUser + '&token=' + getToken, {
           method: 'GET',
           redirect: 'follow'
         })

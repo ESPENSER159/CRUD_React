@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import iconAgent from '../../src/icons/iconAgent.svg';
-import iconChats from '../../src/icons/iconChats.svg';
 import ilusResume from '../../src/ilustrations/resume.svg';
 import ilusJobHunt from '../../src/ilustrations/job_hunt.svg';
 

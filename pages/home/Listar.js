@@ -1,5 +1,6 @@
-import { Children, useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Children, useState, useEffect } from 'react'
+import Link from 'next/link'
+import {API_URL} from '../general.js'
 
 export default function Listar() {
 
@@ -21,8 +22,9 @@ export default function Listar() {
 
   function cargarDatos() {
     let token = sessionStorage.getItem('token');
+    console.log(`${API_URL}/users?token=` + token)
 
-    fetch('http://api.artemisa.v2.com/users?token=' + token)
+    fetch(`${API_URL}/users?token=` + token)
       .then(respuesta => respuesta.json())
       .then((datosRespuesta) => {
         //console.log(datosRespuesta.results);

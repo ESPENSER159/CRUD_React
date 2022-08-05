@@ -2,6 +2,7 @@ import Image from 'next/image';
 import iconLogin from '../../src/iconLogin.png';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import { API_URL } from '../general.js'
 
 export default function Login({ setToken }) {
 
@@ -26,7 +27,7 @@ export default function Login({ setToken }) {
     urlencoded.append("LOGIN", data.user);
     urlencoded.append("PASSWORD", data.pass);
 
-    const resp = await fetch('http://api.artemisa.v2.com/users?login=true', {
+    const resp = await fetch(`${API_URL}/users?login=true`, {
       method: 'POST',
       headers: myHeaders,
       body: urlencoded,
